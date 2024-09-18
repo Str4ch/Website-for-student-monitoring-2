@@ -30,7 +30,7 @@ else{
     return false;
 }
 $con = new Connection();
-$info = $con->getData($query);
+$info = $con->getData($query, true);
 ?>
 <html>
 <link rel="stylesheet" href="../static/Styles.css"/>
@@ -64,13 +64,17 @@ $info = $con->getData($query);
         code
     </th>
     <?php
-    foreach($info as $std){
-        echo "<tr>";
-        for($i=0; $i<count($std); $i++) {
-            echo "<td>" . $std[$i] . "</td>";
-        }
-        echo "</tr>";
-    }
+    echo "<tr>";
+    echo "<td>" . $info[0] . "</td>";
+    echo "<td>" . $info[1] . "</td>";
+    echo "<td>" . $info[2] . "</td>";
+    echo "<td>" . $info[3] . "</td>";
+    echo "<td>" . $info[4] . "</td>";
+    echo "<td>" . $info[5] . "</td>";
+    echo "<td>" . $info[6] . "</td>";
+    echo "<td>" . $info[7] . "</td>";
+    echo "<td>" . $info[8] . "</td>";
+    echo "</tr>";
     ?>
 </table>
 <a href="welcome.php">Go back</a>
