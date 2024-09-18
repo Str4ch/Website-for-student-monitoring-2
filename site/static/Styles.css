@@ -1,0 +1,36 @@
+#centered {
+    display: flex;
+    justify-content: center;
+    background-color: #19191a;
+}
+body {
+    background-color: #76787a;
+    display: inline-block;
+    vertical-align: top;
+}
+div {
+    display: inline-flex;
+}
+table, th, td{
+    width:100%;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.login div {
+    height: 200px;
+    width: 350px;
+    background-color: #76787a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+#Error{
+    color: #ff0000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 30px;
+}

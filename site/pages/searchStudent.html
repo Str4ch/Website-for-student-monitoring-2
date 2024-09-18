@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../static/Styles.css"/>
+<body>
+<h1>
+    Fill one or more fields to find student
+</h1>
+<form action="searchStudentaction.php" method="post">
+    <table>
+        <th>
+            First name
+        </th>
+        <th>
+            Last name
+        </th>
+        <th>
+            Email
+        </th>
+        <tr>
+           <td> <input type = "text" name = "first_name" placeholder = "Enter first name" /></td>
+            <td> <input type = "text" name = "last_name" placeholder = "Enter last name" /></td>
+            <td> <input type = "email" name = "email" placeholder = "Enter email" /></td>
+        </tr>
+    </table>
+    <input type = "submit">
+</form>
+</body>
+</html>

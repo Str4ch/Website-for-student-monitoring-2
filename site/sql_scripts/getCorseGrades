@@ -1,0 +1,3 @@
+SELECT distinct grade_course_code_ref, grade_course_rev_ref, grade_exam_type_ref FROM `grades`
+join students as ss on ss.student_epita_email = `grades`.`grade_student_epita_email_ref`
+where ss.student_population_code_ref = '%s' and ss.student_population_year_ref=%u and  ss.student_population_period_ref = '%s'

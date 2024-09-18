@@ -1,0 +1,10 @@
+select distinct COURSE_NAME, con.contact_first_name, con.contact_last_name from ATTENDANCE
+join COURSES on COURSE_CODE = ATTENDANCE_COURSE_REF
+join STUDENTS as s on ATTENDANCE_STUDENT_REF = STUDENT_EPITA_EMAIL
+join sessions as ses on attendance_session_date_ref = ses.session_date
+join teachers as prof on ses.session_prof_ref = prof.teacher_epita_email
+join contacts as con on prof.teacher_contact_ref = con.contact_email
+where
+
+
+
