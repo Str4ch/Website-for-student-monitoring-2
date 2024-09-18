@@ -39,7 +39,7 @@ $period = $_GET['period'];
 
     echo "</table>";
 
-    echo '<a href="populations.php?population_code='.$population_code.'&year='.$year.'&period='.$period.'">Go back</a>';
+    echo '<a href="welcome.php">Go back</a>';
     ?>
 </div>
 </body>
