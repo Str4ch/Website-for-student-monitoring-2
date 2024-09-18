@@ -28,19 +28,18 @@ http://localhost/Website-for-student-monitoring-2-main/site/pages/
 ```
 4. Ener username "SA", password "123"
 ## How it works
-The main part of the website is PHP, located in ``` site/pages ```.
+The core of the website is built using PHP, with the main code located in the ```site/pages``` directory.
 
-Queres, requests and page generation is made using php. User and Connection are 2 main classes in the rpoject, first one is just simply logging user in and out. Second one is made for executing queres and recieving data from the database. 
+Queries, requests, and page generation are handled by PHP. Two key classes in the project are User and Connection. The User class manages user login and logout functionality, while the Connection class is responsible for executing queries and retrieving data from the database.
 
-Files addCourseaction.php, addStudentaction.php, deleteStudent.php, editGrades.php, editStudents.php are modifying the database.
+Several PHP files, such as addCourseAction.php, addStudentAction.php, deleteStudent.php, editGrades.php, and editStudents.php, modify the database.
 
-Other php files are html templates pages, with php, that generates working page, based on data from the database.
+Other PHP files serve as HTML templates, incorporating PHP to generate dynamic web pages based on database content.
 
-HTML files are pages, that only send the data.
+The HTML files are static pages that primarily handle data submission.
 
-Javascript files are used for generating charts, and few non crutial features.
+JavaScript files are used to generate charts and implement a few non-essential features, while the CSS file, located in ```site/static```, enhances the visual appearance of the website.
 
-CSS file in ``` site/static ``` for better website appearance.
+Finally, the ```site/sql_scripts``` folder contains SQL query templates.
 
-``` site/sql_scripts ``` is the folder that contains the sql queres templates.
  
